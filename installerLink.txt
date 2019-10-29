@@ -1,4 +1,6 @@
-https://tinyurl.com/installermcu
+https://tinyurl.com/installermcu -Lite
+
+https://tinyurl.com/mcuinstallerFull -FullInstaller
 
 
 https://tinyurl.com/nyzexiot   -this repo
