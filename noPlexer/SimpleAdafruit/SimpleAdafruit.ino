@@ -100,7 +100,6 @@ void MQTT_connect(){
 /***********Function For reading AnalogValue from board A0 pin************/
 float get_value(){
   
-  float temp_val;
   int analogValue = analogRead(ANALOG_INPUT);
   return analogValue;
   
