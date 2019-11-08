@@ -148,9 +148,29 @@ and we are good to use BLYNK! :)
 <strong>For Adafruit: </strong>
 
 Go to https://io.adafruit.com/ and click on GET STARTED FOR FREE to signup!
-After a proper signup, login using your credentials.
+After a proper signup, login using your credentials.  
+Now, on the right top we will find ![AIO Key](https://i.ibb.co/RbNs6Tn/AIO.png) ,click on it to get your auth credentials.<br>
+We need the user name and key from there as it will be used in the code.<br>
+![usernamekey](https://i.ibb.co/x8qwjym/authaio.jpg)
+<br>
+We use this in the following section of our code:
 
+```
+#define AIO_USERNAME " " //Adafruit Username
+#define AIO_KEY " " //Adafruit Secret Key
+```
+<br>
 Create a Dashboard, create a new block using the Blue "+" sign, and select your widget.
-After that you will have to create a new feed. This is an important step. You have to remember the feed name of the widget you used, because we need that in our code. Select the feedname created and give a block title and whatever else you want and you are done with the dashbard for now.
+After that you will have to create a new feed. This is an important step. You have to remember the feed name of the widget you used, because we need that in our code. Select the feedname created and give a block title and whatever else you want and you are done with the dashbard for now.<br>
 ![feed](https://i.ibb.co/GVnrgM1/feed.png)
+<br><br>
+We use that feedname in this section of our code: 
+```
+Adafruit_MQTT_Publish Data = Adafruit_MQTT_Publish(&mqtt, AIO_USERNAME"/feeds/This is here the feed name will be");
+```
 
+
+
+
+<br>
+> Hope this all helps in the learning, I am a noob and learning myself. Thanks! 
