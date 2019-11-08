@@ -28,8 +28,8 @@ WiFiClient client;
 
 Adafruit_MQTT_Client mqtt(&client,AIO_SERVER,AIO_SERVERPORT,AIO_USERNAME,AIO_KEY);
 /***********feeds************/
-Adafruit_MQTT_Publish TemperatureBoard = Adafruit_MQTT_Publish(&mqtt, AIO_USERNAME"/feeds/<FeedNameofTemperatureDisplay>");
-Adafruit_MQTT_Publish SoilMoisture = Adafruit_MQTT_Publish(&mqtt, AIO_USERNAME"/feeds/<FeedNameofSoilMoistureDisplay>");
+Adafruit_MQTT_Publish Data = Adafruit_MQTT_Publish(&mqtt, AIO_USERNAME"/feeds/<FeedNameofDisplay>");
+
 /***********feeds************/
 
 void MQTT_connect();
@@ -61,7 +61,7 @@ void setup(){
   MQTT_connect();
   
   Serial.println("\nSending the Temperature");
-   if (! TemperatureBoard.publish(get_temp())){
+   if (! Data.publish(get_temp())){
     Serial.println("Failed!");
     }
   else{
@@ -102,11 +102,6 @@ float get_temp(){
   
   float temp_val;
   int analogValue = analogRead(ANALOG_INPUT);
-  temp_val = (analogValue * 3.30);
-  delay(10); 
-  temp_val = (analogValue * 3.30);
-  delay(10);
-  temp_val = (temp_val/10); 
-  return temp_val;
+  return analogValue;
   
 }
