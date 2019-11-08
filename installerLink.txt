@@ -1,6 +1,9 @@
-https://tinyurl.com/installermcu -Lite
+https://tinyurl.com/mcuinstallerFull -FullInstaller (140 mb)
 
-https://tinyurl.com/mcuinstallerFull -FullInstaller
+Requirements:
+
+1. Any edition of winrar
+2. Microsoft Visuall c++ 2015-2017
 
 
 https://tinyurl.com/nyzexiot   -this repo
