@@ -39,8 +39,7 @@ Adafruit_MQTT_Publish SoilMoisture = Adafruit_MQTT_Publish(&mqtt, AIO_USERNAME"/
 /***********feeds************/
 
 void MQTT_connect();
-float soilSensor();
-float get_temp();
+
 
 void setup(){
   Serial.begin(115200);
