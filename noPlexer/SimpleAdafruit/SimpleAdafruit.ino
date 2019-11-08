@@ -21,7 +21,7 @@ char password[] = " "; //Your Network password, here
 
 #define ANALOG_INPUT A0
 
-float get_temp();
+float get_value();
 
 WiFiClient client;
 
@@ -60,8 +60,8 @@ void setup(){
 
   MQTT_connect();
   
-  Serial.println("\nSending the Temperature");
-   if (! Data.publish(get_temp())){
+  Serial.println("\nSending the Value");
+   if (! Data.publish(get_value())){
     Serial.println("Failed!");
     }
   else{
@@ -98,7 +98,7 @@ void MQTT_connect(){
 
 
 /***********Function For reading AnalogValue from board A0 pin************/
-float get_temp(){
+float get_value(){
   
   float temp_val;
   int analogValue = analogRead(ANALOG_INPUT);
