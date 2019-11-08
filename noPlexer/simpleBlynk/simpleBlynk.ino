@@ -25,20 +25,13 @@ BLYNK_READ(V4) //VirtualPin 4
 }
 
 void setup() {
-  Serial.begin(115200);
+  //Serial.begin(115200);
   Blynk.begin(auth,ssid,password);
  
 }
 
 
 void loop() {
-
-  /*
-   * Serial.print("ldr: ");
-   * Serial.print(luminisence());
-   * Serial.print(" | temp: ");
-   * Serial.println(get_temp());
-   */
   Blynk.run();
 }
 
