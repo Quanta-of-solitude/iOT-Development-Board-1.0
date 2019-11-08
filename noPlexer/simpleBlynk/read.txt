@@ -1,0 +1,1 @@
+Demo for using blynk without more analogs
