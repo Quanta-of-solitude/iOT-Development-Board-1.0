@@ -1,4 +1,4 @@
-# IoT Development Board 1.0, using 4051 @TEchnomate Edubotics Pvt Ltd.
+# IoT Development Board 1.0, using 4051 @Technomate Edubotics Pvt Ltd.
 
 > USING 4051 MuX
 
