@@ -38,7 +38,7 @@ BLYNK_READ(V4) //VirtualPin 4
 
 void setup() {
   Serial.begin(115200);
-  Blynk.begin(auth,ssid,pass);
+  Blynk.begin(auth,ssid,password);
   pinMode(MUX_A, OUTPUT);
   pinMode(MUX_B, OUTPUT);     
   pinMode(MUX_C, OUTPUT);     
