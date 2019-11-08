@@ -122,6 +122,7 @@ So, once this is done open up your arduino 1.8+ (IDE) and under the Tools->Board
 
 > Note it is better to keep an original copy of the repository instead of making new files or editing in case of errors on the ones you downloaded.
 
+
 ## Accounts
 
 Furhter more to use Blynk and Adafruit You have to setup your accounts. (more work XD)<br>
@@ -162,9 +163,11 @@ We use this in the following section of our code:
 <br>
 Create a Dashboard, create a new block using the Blue "+" sign, and select your widget.
 After that you will have to create a new feed. This is an important step. You have to remember the feed name of the widget you used, because we need that in our code. Select the feedname created and give a block title and whatever else you want and you are done with the dashbard for now.<br>
-![feed](https://i.ibb.co/GVnrgM1/feed.png)
-<br><br>
-We use that feedname in this section of our code: 
+
+![food](https://i.ibb.co/xMXrVgc/feed.png)
+
+We use that feedname in this section of our code: <br>
+
 ```
 Adafruit_MQTT_Publish Data = Adafruit_MQTT_Publish(&mqtt, AIO_USERNAME"/feeds/This is here the feed name will be");
 ```
