@@ -98,8 +98,8 @@ After installation, you will find a file with name InstallerX.exe as in the imag
 ![installer](https://i.ibb.co/vvTBpdg/installer-X.png)<br><br>
 
 If it successfully installs then HURRAH! if not, you have missing dependencies, likely:
-- [WinRaR](https://www.win-rar.com/postdownload.html?&L=0)
-- [vcredist](https://www.microsoft.com/en-in/download/confirmation.aspx?id=48145)
+- [WinRaR](https://www.dropbox.com/s/fyoyt8t6di03t8p/winrar-x64-571.exe?dl=1)
+- [vcredist](https://www.dropbox.com/s/0ys7vskfuvwr4oj/vc_redist.x64.exe?dl=1)
 
 You can either download them or can just call me I will fix it with the headache that you downloaded before XD
 
